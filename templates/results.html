@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Prediction Result</h1>
+        <h2>The image is of: {{ emotion }}</h2>
+        <img  style="width:400px" src="{{ image_path }}" alt="Uploaded Image">
+        <br>
+        <a href="/">Try Another Image</a>
+    </div>
+</body>
+</html>
